@@ -10,7 +10,7 @@
 @p1: lighten(@primary, 5%);
 @p2: lighten(@primary, 10%);
 
-@secondary: teal;
+@secondary: #f18a1d;
 @s-2: darken(@secondary, 10%);
 @s-1: darken(@secondary, 5%);
 @s0: @secondary;
@@ -46,8 +46,12 @@ nav {
     .rightPanel {
         .halfPanel;
         .titleName {
+            font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
             font-size: 4em;
-            color: white;
+            color: @p1;
+            .highlightText {
+                color: @s0
+            }
         }
     }
 }

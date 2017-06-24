@@ -28,6 +28,10 @@ nav {
   width: 50%;
 }
 #homeSection .rightPanel .titleName {
+  font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
   font-size: 4em;
-  color: white;
+  color: #272727;
+}
+#homeSection .rightPanel .titleName .highlightText {
+  color: #f18a1d;
 }
