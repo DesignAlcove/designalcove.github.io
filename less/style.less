@@ -1,0 +1,57 @@
+@text-light:    #ffffff;
+@background:    #232323;
+@highlight:     #26a69a;
+@background-dark:#0a0b0c;
+
+@primary: #1A1A1A;
+@p-2: darken(@primary, 10%);
+@p-1: darken(@primary, 5%);
+@p0: @primary;
+@p1: lighten(@primary, 5%);
+@p2: lighten(@primary, 10%);
+
+@secondary: #f18a1d;
+@s-2: darken(@secondary, 10%);
+@s-1: darken(@secondary, 5%);
+@s0: @secondary;
+@s1: lighten(@secondary, 5%);
+@s2: lighten(@secondary, 10%);
+
+body {
+    background-color: @p-1;
+}
+nav {
+    background-color: @p-1 !important;
+}
+#homeSection {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    .halfPanel() {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+    }
+    .leftPanel {
+        .halfPanel;
+        .logo {
+            img {
+                width: 200%;
+            }
+        }
+    }
+    .rightPanel {
+        .halfPanel;
+        .titleName {
+            font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+            font-size: 4em;
+            color: @p1;
+            .highlightText {
+                color: @s0
+            }
+        }
+    }
+}

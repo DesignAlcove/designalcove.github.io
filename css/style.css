@@ -1,0 +1,37 @@
+body {
+  background-color: #0d0d0d;
+}
+nav {
+  background-color: #0d0d0d !important;
+}
+#homeSection {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+#homeSection .leftPanel {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+#homeSection .leftPanel .logo img {
+  width: 200%;
+}
+#homeSection .rightPanel {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+}
+#homeSection .rightPanel .titleName {
+  font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+  font-size: 4em;
+  color: #272727;
+}
+#homeSection .rightPanel .titleName .highlightText {
+  color: #f18a1d;
+}
